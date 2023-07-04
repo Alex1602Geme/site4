@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+        header{
+            width: 100vw;
+            height: 100px;
+            padding-left: 100px;
+            display: flex;
+            margin-top: -2px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .s{
+            margin-left: 35vw;
+            margin-right: 50px;
+        }
+        .as{
+            margin-top: 20px;
+            margin-left: -70px;
+        }
+        .login{
+            color: #0d4cd3;
+            background-color: #7e9fe559;
+            border-radius: 15px;
+            width: 120px;
+            height: 50px;
+            padding-top: 12px;
+            padding-left: 32px;
+            margin-top: 25px;
+        }
+        .login a{
+            color: #0d4cd3;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 18.72px;
+        }
+        .reg{
+            color: #0d4cd3;
+            background-color: #7e9fe559;
+            border-radius: 15px;
+            width: 220px;
+            height: 50px;
+            padding-top: 12px;
+            padding-left: 55px;
+            margin-top: 25px;
+        }
+        .reg a{
+            color: #0d4cd3;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 18.72px;
+        }
+        main{
+            margin-top: 0;
+            background: rgb(13,76,211);
+            background: linear-gradient(0deg, rgba(47,81,223,0.9) 0%, rgba(45,79,223,1) 100%);
+            width: 100vw;
+            height: 800px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        .article1{
+            position: relative;
+            width: 600px;
+            height: 650px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 40px;
+        }
+        .article1 img{
+            margin-left: 210px;
+            margin-bottom: 20px;
+        }
+        .article1 h1{
+            margin-bottom: 20px;
+            font-size: 33px;
+            font-weight: 400;
+        }
+        .article1 h3{
+            margin-bottom: 40px;
+        }
+        .article2{
+            display: flex;
+            width: 100vw;
+            height: 200px;
+            background-color: #7e9fe559;
+            color: rgb(83, 83, 83);
+        }
+        .a h3{
+            margin: 20px;
+        }
+        .art3{
+            width: 100vw;
+            height: 200px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        .butt_zayv{
+            background-color: #0d4cd3;
+            border-radius: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-left: 190px;
+        }
+        .pr{
+            width: 50px;
+            height: 50px;
+        }
+        .bar{
+            width: 100vw;
+            margin-bottom: -5px;
+        }
+        .robot{
+            position: absolute;
+            left: 100px;
+            top: 300px;
+        }
+        @media (max-width: 700px) { 
+            .s{
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        .login{
+            color: white;
+            background-color: white;
+            border-radius: 15px;
+            width: 120px;
+            height: 50px;
+            padding-top: 12px;
+            padding-left: 32px;
+            margin-top: 25px;
+            margin-left: -150px;
+            z-index: -1;
+        }
+        .login a{
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 18.72px;
+        }
+        .reg{
+            color: white;
+            background-color: white;
+            border-radius: 15px;
+            width: 120px;
+            height: 50px;
+            padding-top: 12px;
+            padding-left: 32px;
+            margin-top: 25px;
+            margin-left: -170px;
+            z-index: -1;
+        }
+        .reg a{
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 18.72px;
+        }
+        .article1 h3{
+            margin-bottom: 40px;
+            overflow: scroll;
+            height: 320px;
+        }
+        .butt_zayv{
+            background-color: #0d4cd3;
+            border-radius: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-left: 95px;
+        }
+        .article1{
+            width: 600px;
+            height: 700px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 40px;
+        }
+        .article2{
+            display: flex;
+            width: 100vw;
+            height: 300px;
+            background-color: #7e9fe559;
+            color: rgb(83, 83, 83);
+        }
+        .a h3{
+            margin: 30px 10px 10px 10px;
+        }
+        .art3{
+            width: 100vw;
+            height: 300px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        .article1 img{
+            margin-left: 115px;
+            margin-bottom: 20px;
+        }
+        .pr{
+            width: 0;
+            height: 0;
+        }
+        .robot{
+            width: 0;
+            height: 0;
+        }
+        .bar{
+            width: 0;
+            height: 0;
+        }
+        }       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="itd.png" alt="" class="as" height="60">
+        <img src="Unknown.png" alt="" width="200">
+        <img src="search-blue.svg" alt="" class="s" width="40">
+        <div class="login" id="butt">
+            <a id="butt" href="">Войти</a>
+        </div>
+        <div class="pr"></div>
+        <div class="reg" id="butt">
+            <a id="butt" href="">Регестрация</a>
+        </div>
+        <div class="pr"></div>
+    </header>
+    <img src="bar.png" alt="" class="bar">
+    <main>
+        <img src="robot.png" alt="" class="robot" width="220">
+        <article class="article1">
+            <img width="100" height="100" src="/free-icon-exclamation-mark-3714919.png" alt="error"/>
+            <h1 align="center">
+                Lorem ipsum dolor sit.
+            </h1>
+            <h3 align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta voluptas est facere, cupiditate vitae! Officia, porro quam, odit voluptate magni eaque ea quidem maiores natus qui impedit distinctio fuga quis amet mollitia <br><br> dignissimos vitae accusantium, reiciendis veritatis quod illo voluptas possimus laboriosam. Itaque recusandae, error, porro qui cum repudiandae veritatis ut minima necessitatibus dolore eaque earum non, <br><br>dolorem totam facere voluptas veniam.  Illo labore corporis aut saepe mollitia ad officia autem nulla reprehenderit distinctio quidem asperiores delectus, dolor necessitatibus, eveniet itaque modi, cum qui. </h3>
+            <a href="" class="butt_zayv">Далее</a>
+        </article>
+    </main>
+    <article class="article2">
+        <div class="art3">
+            <div class="a">
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+            </div>
+            <div class="a">
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+            </div>
+            <div class="a">
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+                <h3>Личный кабинет</h3>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
